@@ -1,0 +1,45 @@
+{
+  "homepage": "https://ekinkaradag.github.io/snake-vue3/",
+  "name": "vue-snake",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Fezwer",
+  "description": "My first App!",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron-forge start",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "electron": "latest",
+    "electron-squirrel-startup": "^1.0.1",
+    "marked": "^7.0.4",
+    "typescript": "^5.1.6",
+    "vue": "^3.3.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/compiler-sfc": "^3.3.4",
+    "electron": "^31.1.0",
+    "gh-pages": "^6.0.0",
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.8"
+  }
+}

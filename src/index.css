@@ -1,0 +1,95 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+.name-input input{
+  height: 42px;
+}
+
+.record-list{
+  width: 100%;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.record-list h2{
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.record-list table{
+  width: 30%;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.record-list .number{
+  color: brown;
+  width: 50%;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.record-list .playerName{
+  color: white;
+  width: 50%;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.record-list .closeButton{
+  margin-top: 20px;
+  background-color: brown;
+
+  &:hover{
+    background-color: rgb(89, 22, 22);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+}
+
+.score {
+  flex: 1;
+  font-family: "Courier", monospace;
+  float: left;
+  text-align: left;
+  color: rgb(0, 199, 0);
+  text-shadow: 1px 1px 1px darkgreen, -1px 1px 1px darkgreen,
+    1px -1px 1px darkgreen, -1px -1px 1px darkgreen, 0 0 30px lightgreen,
+    0 0 30px lightgreen;
+}
+
+.scoreboard {
+  flex: 1;
+  float: right;
+  text-align: right;
+}
+
+.score-area {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.score-value {
+  vertical-align: middle;
+}
+
+.game-area {
+  flex: 0;
+  text-align: center;
+  width: inherit;
+}
